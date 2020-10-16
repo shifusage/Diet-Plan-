@@ -1,0 +1,44 @@
+[
+    {
+        "name": " salmon",
+        "quantity": 7,
+        "calorie": 220,
+        "food_category": " vegetable",
+        "expiration": 10
+    },
+    {
+        "name": "apple",
+        "quantity": 10,
+        "calorie": 40,
+        "food_category": "  fruit  ",
+        "expiration": 3
+    },
+    {
+        "name": "broccoli",
+        "quantity": 4,
+        "calorie": 20,
+        "food_category": "vegetable",
+        "expiration": 5
+    },
+    {
+        "name": "chicken",
+        "quantity": 1,
+        "calorie": 40,
+        "food_category": "fruit",
+        "expiration": 3
+    },
+    {
+        "name": "nuggets",
+        "quantity": 4,
+        "calorie": 70,
+        "food_category": "fruit",
+        "expiration": 19
+    },
+    {
+        "name": "pork",
+        "quantity": 3,
+        "calorie": 40,
+        "food_category": "fruit",
+        "expiration": 30
+    }
+]
