@@ -1,0 +1,13 @@
+import json
+from goldfish import prompt_for_ingredient
+ingredients = []
+with open("ingredients_list.json","r") as file:
+    file_contents = file.read()
+    ingredients = json.loads(file_contents)
+
+ingredient = prompt_for_ingredient()
+
+ingredients.append(ingredient.__dict__)
+
+with open("ingredients_list.json","w") as file:
+    file.write(json.dumps(ingredients, indent=4))
