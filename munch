@@ -1,0 +1,16 @@
+import json
+
+ingredients = []
+with open("ingredients_list.json", "r") as file:
+    file_contents = file.read()
+    ingredients = json.loads(file_contents)
+
+with open("ingredients_list.json", "w") as file:
+    first_item = ingredients[0]
+    new_quantity = first_item['quantity'] - 1
+    if new_quantity == 0:
+        ingredients.remove(first_item)
+    else:
+        first_item.update({'quantity': new_quantity})
+
+    file.write(json.dumps(ingredients, indent=4))
