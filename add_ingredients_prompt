@@ -1,0 +1,29 @@
+import json
+
+#inputs objects into a list
+
+class Ingredient:
+    def __init__(self, name, quantity, calorie, food_category, expiration):
+        self.name = name
+        self.quantity = quantity
+        self.calorie = calorie
+        self.food_category = food_category
+        self.expiration = expiration
+
+    def __str__(self):
+            return '{} {}, {} calories, {} expires in {} days'. format(self.quantity,self.name,self.calorie, self.food_category, self.expiration)
+    def __repr__(self):
+            return self.__str__()
+
+#make ingredient prompt
+def prompt_for_ingredient():
+    name = input("Ingredient name? ")
+    quantity = int(input("Ingredient quantity? "))
+    calorie = int(input("Ingredient calorie per serving size? "))
+    food_category = input("Ingredient's food category? ")
+    expiration = int(input("Ingredient's expected expiration in days? "))
+    return Ingredient(name, quantity, calorie, food_category, expiration)
+
+
+
+
